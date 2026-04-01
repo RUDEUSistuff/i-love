@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NUCLEAR Calculator</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+
+<div id="startScreen">
+    <h1>☢️ NUCLEAR CALCULATOR</h1>
+    <button id="startBtn">START</button>
+</div>
+
+<div id="app">
+
+    <h2>🔥 Mega System</h2>
+
+    <div class="topBtns">
+        <button onclick="setMode('math')">Math</button>
+        <button onclick="setMode('physics')">Physics</button>
+        <button onclick="setMode('3d')">3D</button>
+        <button onclick="setMode('atoms')">Atoms</button>
+        <button onclick="setMode('puzzle')">Puzzle</button>
+        <button onclick="setMode('graph')">Graph</button>
+    </div>
+
+    <input id="input" placeholder="Type here">
+
+    <div id="buttons"></div>
+    <div id="canvasBox"></div>
+
+    <canvas id="graphCanvas" width="400" height="250"></canvas>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <p id="result"></p>
+    <p id="xp">XP: 0 | Level: 1</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
